@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="spotify.png" type="image/x-icon">
+    <title>Spotify - Web Player: Music for everyone</title>
+</head>
+
+<body bgcolor="black">
+    <div class="flex bg-black h-[88vh]">
+        <div class="nav sticky top-0 m-2">
+            <div class="rounded-lg bg-[#121212] py-4 px-6 space-y-8">
+                <div class="home png flex gap-6">
+                    <span class="img"><img class="w-6" src="./resources/home.png" alt=""></span>
+                    <span>Home</span>
+                </div>
+                <div class="search png flex gap-4">
+                    <span class="img"><img class="w-6" src="./resources/search.png" alt=""></span>
+                    <span>Search</span>
+                </div>
+            </div>
+            <div class="playlist bg-[#121212] mt-2 rounded-lg w-[350px] py-4">
+                <div class="library png p-4 flex justify-between items-center  shadow-lg shadow-white">
+                    <div class="flex">
+                        <span class="px-2"><img class="w-6" src="./resources/layers.png" alt=""></span>
+                        <span>Your Library</span>
+                    </div>
+                    <span class="hover:bg-[#e8dbdb] rounded-full p-1"><img class="w-4" src="./resources/plus.png"
+                            alt=""></span>
+                </div>
+                <div class="myScroll h-[250px] overflow-y-auto">
+                    <div class="playlist my-2">
+                        <div class="bg-[#242424] text-white p-4 rounded-lg m-auto w-[300px]">
+                            <h2>Create your first platlist</h2>
+                            <p class="my-3 font-normal text-sm">It's easy,we'll help you</p>
+                            <button class="mt-3 bg-white text-black rounded-full px-4 py-1 text-sm font-medium">Create
+                                playlist</button>
+                        </div>
+                    </div>
+                    <div class="podcast my-6">
+                        <div class="bg-[#242424] text-white p-4 rounded-lg m-auto w-[300px]">
+                            <h2>Let's find some podcasts to follow</h2>
+                            <p class="my-3 font-normal text-sm">We'll keep you updated on new episodes</p>
+                            <button class="mt-3 bg-white text-black rounded-full px-4 py-1 text-sm font-medium">Browse
+                                podcasts</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-white text-[0.7rem] font-light bg-[#121212]">
+                    <div class="flex p-6 space-x-4">
+                        <div><a href="">Legal</a></div>
+                        <div><a href="">Privacy Center</a></div>
+                        <div><a href="">Privacy Policy</a></div>
+                        <div class=" bg-[#121212]"><a href="">Cookies</a></div>
+                    </div>
+                    <div class="flex px-6 space-x-4">
+                        <div><a href="">About Ads</a></div>
+                        <div><a href="">Accessibility</a></div>
+
+                    </div>
+                    <div class="flex px-6 my-4">
+                        <div><a href="">Cookies</a></div>
+
+                    </div>
+                </div>
+                <div class="language flex items-center gap-1 border w-24 rounded-full py-1 px-2 mx-4">
+                    <span><img class="w-4 invert" src="./resources/earth-globe.png" alt=""></span>
+                    <span class="text-white text-sm">English</span>
+                </div>
+            </div>
+        </div>
+        <div class="main text-white mt bg-[#121212]">
+            <div class="nav sticky flex justify-between h-16 bg-black">
+                <div class="left flex gap-2 text-white">
+                    <button class="my-2 rounded-full p-3 h-12"><ion-icon name="chevron-back"></ion-icon></button>
+                    <button class="my-2 rounded-full p-3 h-12"><ion-icon name="chevron-forward"></ion-icon></button>
+                </div>
+                <div class="right py-2 space-x-4 mr-4">
+                    <button class="hover:scale-105">Sign up</button>
+                    <button class="bg-white text-black py-3 px-6 rounded-full hover:scale-105">Log in</button>
+                </div>
+            </div>
+            <div class="songs">
+                <div class="upper flex justify-between px-4">
+                    <div class="text text-xl">Focus</div>
+                    <div class="text-sm font-medium opacity-70 mr-3"><button>Show All</button></div>
+                </div>
+                <div class="card-wrapper m-10 flex space-x-4">
+
+                    <div class="card relative bg-[#121212] rounded-md w-52 h-[290px] p-1">
+                        <div class="img bg-red-500 w-50 h-50 rounded-lg m-3"><img class="rounded-md"
+                                src="./images/Row2/2img1.png" alt=""></div>
+                        <div class="title mx-4">Peaceful Piano</div>
+                        <div
+                            class="description mx-4 my-2 text-[0.75rem] font-medium h-10 overflow-hidden text-ellipsis">
+                            Peaceful piano to help you slow down, breathe, and relax.</div>
+                        <button class="play absolute top-40 left-32 hidden show"><svg
+                                class="bg-[#1DB954] p-3 h-12 rounded-full" xmlns="http://www.w3.org/2000/svg"
+                                class="ionicon" viewBox="0 0 512 512">
+                                <path d="M96 448l320-192L96 64v384z" />
+                            </svg></ion-icon></button>
+                    </div>
+                    <div class="card relative bg-[#121212] rounded-md w-52 h-[290px] p-1">
+                        <div class="img bg-red-500 w-50 h-50 rounded-lg m-3"><img class="rounded-md"
+                                src="./images/Row2/2img2.png" alt=""></div>
+                        <div class="title mx-4">Deep Focus</div>
+                        <div
+                            class="description mx-4 my-2 text-[0.75rem] font-medium h-10 overflow-hidden text-ellipsis">
+                            Peaceful piano to help you slow down, breathe, and relax.</div>
+                        <button class="play absolute top-40 left-32 hidden show"><svg
+                                class="bg-[#1DB954] p-3 h-12 rounded-full" xmlns="http://www.w3.org/2000/svg"
+                                class="ionicon" viewBox="0 0 512 512">
+                                <path d="M96 448l320-192L96 64v384z" />
+                            </svg></ion-icon></button>
+                    </div>
+                    <div class="card relative bg-[#121212] rounded-md w-52 h-[290px] p-1">
+                        <div class="img bg-red-500 w-50 h-50 rounded-lg m-3"><img class="rounded-md"
+                                src="./images/Row2/2img3.png" alt=""></div>
+                        <div class="title mx-4">Instrumental Study</div>
+                        <div
+                            class="description mx-4 my-2 text-[0.75rem] font-medium h-10 overflow-hidden text-ellipsis">
+                            Peaceful piano to help you slow down, breathe, and relax.</div>
+                        <button class="play absolute top-40 left-32 hidden show"><svg
+                                class="bg-[#1DB954] p-3 h-12 rounded-full" xmlns="http://www.w3.org/2000/svg"
+                                class="ionicon" viewBox="0 0 512 512">
+                                <path d="M96 448l320-192L96 64v384z" />
+                            </svg></ion-icon></button>
+                    </div>
+                    <div class="card relative bg-[#121212] rounded-md w-52 h-[290px] p-1">
+                        <div class="img bg-red-500 w-50 h-50 rounded-lg m-3"><img class="rounded-md"
+                                src="./images/Row2/2img4.png" alt=""></div>
+                        <div class="title mx-4">Focus Flow</div>
+                        <div
+                            class="description mx-4 my-2 text-[0.75rem] font-medium h-10 overflow-hidden text-ellipsis">
+                            Peaceful piano to help you slow down, breathe, and relax.</div>
+                        <button class="play absolute top-40 left-32 hidden "><svg
+                                class="bg-[#1DB954] p-3 h-12 rounded-full" xmlns="http://www.w3.org/2000/svg"
+                                class="ionicon" viewBox="0 0 512 512">
+                                <path d="M96 448l320-192L96 64v384z" />
+                            </svg></ion-icon></button>
+                    </div>
+                    <div class="card relative bg-[#121212] rounded-md w-52 h-[290px] p-1">
+                        <div class="img bg-red-500 w-50 h-50 rounded-lg m-3"><img class="rounded-md"
+                                src="./images/Row2/2img5.png" alt=""></div>
+                        <div class="title mx-4">Workday Lounge</div>
+                        <div
+                            class="description mx-4 my-2 text-[0.75rem] font-medium h-10 overflow-hidden text-ellipsis">
+                            Peaceful piano to help you slow down, breathe, and relax.</div>
+                        <button class="play absolute top-40 left-32 hidden"><svg
+                                class="bg-[#1DB954] p-3 h-12 rounded-full" xmlns="http://www.w3.org/2000/svg"
+                                class="ionicon" viewBox="0 0 512 512">
+                                <path d="M96 448l320-192L96 64v384z" />
+                            </svg></ion-icon></button>
+                    </div>
+                </div>
+            </div>
+            <div class="songs">
+                <div class="upper flex justify-between px-4">
+                    <div class="text text-xl">Focus</div>
+                    <div class="text-sm font-medium opacity-70 mr-3"><button>Show All</button></div>
+                </div>
+                <div class="card-wrapper m-10 flex space-x-4">
+
+                    <div class="card relative bg-[#121212] rounded-md w-52 h-[290px] p-1">
+                        <div class="img bg-red-500 w-50 h-50 rounded-lg m-3"><img class="rounded-md"
+                                src="./images/Row1/img1.jpeg" alt=""></div>
+                        <div class="title mx-4">Peaceful Piano</div>
+                        <div
+                            class="description mx-4 my-2 text-[0.75rem] font-medium h-10 overflow-hidden text-ellipsis">
+                            Peaceful piano to help you slow down, breathe, and relax.</div>
+                        <button class="play absolute top-40 left-32 hidden"><svg
+                                class="bg-[#1DB954] p-3 h-12 rounded-full" xmlns="http://www.w3.org/2000/svg"
+                                class="ionicon" viewBox="0 0 512 512">
+                                <path d="M96 448l320-192L96 64v384z" />
+                            </svg></ion-icon></button>
+                    </div>
+                    <div class="card relative bg-[#121212] rounded-md w-52 h-[290px] p-1">
+                        <div class="img bg-red-500 w-50 h-50 rounded-lg m-3"><img class="rounded-md"
+                                src="./images/Row1/img2.png" alt=""></div>
+                        <div class="title mx-4">Deep Focus</div>
+                        <div
+                            class="description mx-4 my-2 text-[0.75rem] font-medium h-10 overflow-hidden text-ellipsis">
+                            Peaceful piano to help you slow down, breathe, and relax.</div>
+                        <button class="play absolute top-40 left-32 hidden"><svg
+                                class="bg-[#1DB954] p-3 h-12 rounded-full" xmlns="http://www.w3.org/2000/svg"
+                                class="ionicon" viewBox="0 0 512 512">
+                                <path d="M96 448l320-192L96 64v384z" />
+                            </svg></ion-icon></button>
+                    </div>
+                    <div class="card relative bg-[#121212] rounded-md w-52 h-[290px] p-1">
+                        <div class="img bg-red-500 w-50 h-50 rounded-lg m-3"><img class="rounded-md"
+                                src="./images/Row1/img3.png" alt=""></div>
+                        <div class="title mx-4">Instrumental Study</div>
+                        <div
+                            class="description mx-4 my-2 text-[0.75rem] font-medium h-10 overflow-hidden text-ellipsis">
+                            Peaceful piano to help you slow down, breathe, and relax.</div>
+                        <button class="play absolute top-40 left-32 hidden"><svg
+                                class="bg-[#1DB954] p-3 h-12 rounded-full" xmlns="http://www.w3.org/2000/svg"
+                                class="ionicon" viewBox="0 0 512 512">
+                                <path d="M96 448l320-192L96 64v384z" />
+                            </svg></ion-icon></button>
+                    </div>
+                    <div class="card relative bg-[#121212] rounded-md w-52 h-[290px] p-1">
+                        <div class="img bg-red-500 w-50 h-50 rounded-lg m-3"><img class="rounded-md"
+                                src="./images/Row1/img4.png" alt=""></div>
+                        <div class="title mx-4">Focus Flow</div>
+                        <div
+                            class="description mx-4 my-2 text-[0.75rem] font-medium h-10 overflow-hidden text-ellipsis">
+                            Peaceful piano to help you slow down, breathe, and relax.</div>
+                        <button class="play absolute top-40 left-32 hidden"><svg
+                                class="bg-[#1DB954] p-3 h-12 rounded-full" xmlns="http://www.w3.org/2000/svg"
+                                class="ionicon" viewBox="0 0 512 512">
+                                <path d="M96 448l320-192L96 64v384z" />
+                            </svg></ion-icon></button>
+                    </div>
+                    <div class="card relative bg-[#121212] rounded-md w-52 h-[290px] p-1">
+                        <div class="img bg-red-500 w-50 h-50 rounded-lg m-3"><img class="rounded-md"
+                                src="./images/Row1/img5.png" alt=""></div>
+                        <div class="title mx-4">Workday Lounge</div>
+                        <div
+                            class="description mx-4 my-2 text-[0.75rem] font-medium h-10 overflow-hidden text-ellipsis">
+                            Peaceful piano to help you slow down, breathe, and relax.</div>
+                        <button class="play absolute top-40 left-32 hidden"><svg
+                                class="bg-[#1DB954] p-3 h-12 rounded-full" xmlns="http://www.w3.org/2000/svg"
+                                class="ionicon" viewBox="0 0 512 512">
+                                <path d="M96 448l320-192L96 64v384z" />
+                            </svg></ion-icon></button>
+                    </div>
+                </div>
+            </div>
+            <div class="songs">
+                <div class="upper flex justify-between px-4">
+                    <div class="text text-xl">Focus</div>
+                    <div class="text-sm font-medium opacity-70 mr-3"><button>Show All</button></div>
+                </div>
+                <div class="card-wrapper m-10 flex space-x-4">
+
+                    <div class="card relative bg-[#121212] rounded-md w-52 h-[290px] p-1">
+                        <div class="img bg-red-500 w-50 h-50 rounded-lg m-3"><img class="rounded-md"
+                                src="./images/Row3/3img1.png" alt=""></div>
+                        <div class="title mx-4">Peaceful Piano</div>
+                        <div
+                            class="description mx-4 my-2 text-[0.75rem] font-medium h-10 overflow-hidden text-ellipsis">
+                            Peaceful piano to help you slow down, breathe, and relax.</div>
+                        <button class="play absolute top-40 left-32 hidden"><svg
+                                class="bg-[#1DB954] p-3 h-12 rounded-full" xmlns="http://www.w3.org/2000/svg"
+                                class="ionicon" viewBox="0 0 512 512">
+                                <path d="M96 448l320-192L96 64v384z" />
+                            </svg></ion-icon></button>
+                    </div>
+                    <div class="card relative bg-[#121212] rounded-md w-52 h-[290px] p-1">
+                        <div class="img bg-red-500 w-50 h-50 rounded-lg m-3"><img class="rounded-md"
+                                src="./images/Row3/3img2.png" alt=""></div>
+                        <div class="title mx-4">Deep Focus</div>
+                        <div
+                            class="description mx-4 my-2 text-[0.75rem] font-medium h-10 overflow-hidden text-ellipsis">
+                            Peaceful piano to help you slow down, breathe, and relax.</div>
+                        <button class="play absolute top-40 left-32 hidden"><svg
+                                class="bg-[#1DB954] p-3 h-12 rounded-full" xmlns="http://www.w3.org/2000/svg"
+                                class="ionicon" viewBox="0 0 512 512">
+                                <path d="M96 448l320-192L96 64v384z" />
+                            </svg></ion-icon></button>
+                    </div>
+                    <div class="card relative bg-[#121212] rounded-md w-52 h-[290px] p-1">
+                        <div class="img bg-red-500 w-50 h-50 rounded-lg m-3"><img class="rounded-md"
+                                src="./images/Row3/3img3.png" alt=""></div>
+                        <div class="title mx-4">Instrumental Study</div>
+                        <div
+                            class="description mx-4 my-2 text-[0.75rem] font-medium h-10 overflow-hidden text-ellipsis">
+                            Peaceful piano to help you slow down, breathe, and relax.</div>
+                        <button class="play absolute top-40 left-32 hidden"><svg
+                                class="bg-[#1DB954] p-3 h-12 rounded-full" xmlns="http://www.w3.org/2000/svg"
+                                class="ionicon" viewBox="0 0 512 512">
+                                <path d="M96 448l320-192L96 64v384z" />
+                            </svg></ion-icon></button>
+                    </div>
+                    <div class="card relative bg-[#121212] rounded-md w-52 h-[290px] p-1">
+                        <div class="img bg-red-500 w-50 h-50 rounded-lg m-3"><img class="rounded-md"
+                                src="./images/Row3/3img4.png" alt=""></div>
+                        <div class="title mx-4">Focus Flow</div>
+                        <div
+                            class="description mx-4 my-2 text-[0.75rem] font-medium h-10 overflow-hidden text-ellipsis">
+                            Peaceful piano to help you slow down, breathe, and relax.</div>
+                        <button class="play absolute top-40 left-32 hidden"><svg
+                                class="bg-[#1DB954] p-3 h-12 rounded-full" xmlns="http://www.w3.org/2000/svg"
+                                class="ionicon" viewBox="0 0 512 512">
+                                <path d="M96 448l320-192L96 64v384z" />
+                            </svg></ion-icon></button>
+                    </div>
+                    <div class="card relative bg-[#121212] rounded-md w-52 h-[290px] p-1">
+                        <div class="img bg-red-500 w-50 h-50 rounded-lg m-3"><img class="rounded-md"
+                                src="./images/Row3/3img5.png" alt=""></div>
+                        <div class="title mx-4">Workday Lounge</div>
+                        <div
+                            class="description mx-4 my-2 text-[0.75rem] font-medium h-10 overflow-hidden text-ellipsis">
+                            Peaceful piano to help you slow down, breathe, and relax.</div>
+                        <button class="play absolute top-40 left-32 hidden"><svg
+                                class="bg-[#1DB954] p-3 h-12 rounded-full" xmlns="http://www.w3.org/2000/svg"
+                                class="ionicon" viewBox="0 0 512 512">
+                                <path d="M96 448l320-192L96 64v384z" />
+                            </svg></ion-icon></button>
+                    </div>
+                </div>
+            </div>
+            <hr class="text-gray-500">
+            <div class="links flex justify-between px-4 my-8">
+                <div class="left-link flex space-x-28">
+                    <div class="flex flex-col text-gray-400 space-y-2">
+                        <h2 class="text-white">Company</h2>
+                        <a class="font-medium hover:text-white hover:underline" href="">About</a><a class="font-medium hover:text-white hover:underline" href="">Jobs</a><a
+                            class="font-medium hover:text-white hover:underline" href="">For the Records</a>
+                    </div>
+                    <div class="flex flex-col text-gray-400 space-y-2">
+                        <h2 class="text-white">Communities</h2>
+                        <a class="font-medium hover:text-white hover:underline" href="">For Artists</a>
+                        <a class="font-medium hover:text-white hover:underline" href="">Developers</a>
+                        <a class="font-medium hover:text-white hover:underline" href="">Advertising</a>
+                        <a class="font-medium hover:text-white hover:underline" href="">Investors</a>
+                        <a class="font-medium hover:text-white hover:underline" href="">Vendors</a>
+                    </div>
+                    <div class="flex flex-col text-gray-400 space-y-2">
+                        <h2 class="text-white">Company</h2>
+                        <a class="font-medium hover:text-white hover:underline" href="">Support</a>
+                        <a class="font-medium hover:text-white hover:underline" href="">Free Mobile App</a>
+                    </div>
+                </div>
+                <div class="right-link flex justify-center space-x-10 mr-8">
+                    <div class="insta bg-[#121212] rounded-full py-2 px-3 h-10 opacity-80 hover:bg-[#242424]"><ion-icon
+                            name="logo-instagram"></ion-icon></div>
+                    <div class="twitter bg-[#121212] rounded-full py-2 px-3 h-10 opacity-80 hover:bg-[#242424]">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </div>
+                    <div class="facebookbg-[#121212] rounded-full py-2 px-3 h-10 opacity-80 hover:bg-[#242424]">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-gray-500 py-10 mb-20 mx-4">© 2023 Spotify AB</div>
+        </div>
+    </div>
+    <div class="signup w-[100%] fixed bottom-2 text-white">
+        <div class="flex justify-between items-center px-4">
+            <div class="my-3 text flex flex-col text-sm gap-1">
+                <div class="font-medium">PREVIEW OF SPOTIFY</div>
+                <div>Sign up to get unlimited songs and podcasts with occasional ads. No credit cards needed.</div>
+            </div>
+            <div
+                class="button bg-white text-black font-medium px-8 py-3 rounded-full hover:px-[2.05rem] hover:py-[0.80rem] hover:font-semibold">
+                <button>Sign up free</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>

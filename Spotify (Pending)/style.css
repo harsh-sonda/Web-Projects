@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    overflow-x: hidden;
+}
+
+/* width */
+ ::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #121212; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(134, 127, 127);
+    opacity: 10%; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #dad3d3; 
+  }
+
+body {
+    font-family: 'Gotham';
+    font-weight: 700;
+}
+
+.png {
+    filter: invert(1);
+    opacity: 70%;
+}
+
+.png:hover {
+    opacity: 100%;
+}
+
+.song-bg {
+    background: linear-gradient(#242424, #121212);
+}
+
+.shadow {
+    box-shadow: 1px 1px 5px 4px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 1px 1px 5px 4px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 1px 1px 5px 4px rgba(0, 0, 0, 1);
+}
+.card:hover{
+    background: #2d2c2c;
+}
+.card:hover show{
+  display: initial;
+}
+.signup{
+  background: linear-gradient(to right,rgb(157, 49, 157),#5c8dd1);
+}
